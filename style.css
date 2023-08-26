@@ -160,6 +160,15 @@ nav ul li a:hover::after {
     bottom: -8px;
     transition: 0.5s;
 }
+#experience li p{
+    margin-top: 20px;
+}
+#skills li p{
+    margin-top: 15px;
+}
+#education li p{
+    margin-top: 15px;
+}
 
 .tab-links.active-link::after{
     width: 50%;
