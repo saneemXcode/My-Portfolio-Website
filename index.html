@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saneem personal Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/264684348b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo">My Portfolio </h2> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Project's</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-regular fa-circle-xmark" id="fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+            </nav>
+          <div id="firstleft">
+              <div class="header-text">
+                  <p>Tech-Explorer</p>
+                  <h1>HI, I'm <span> Saneem</span><br>  I am passionate <br>
+                    <span id="element"></span>
+                </h1>
+            </div>
+            <div class="image">
+                <img src="image/bg.png" >
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <!-- -----------------------About------------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/p1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-tittle">About me</h2>
+                 <p>
+
+                     <big> <strong>Name : </strong></big>Mahammad Saneem <br>
+                     <big> <strong> Age :</strong> </big> 19 <br>
+                     <br>
+                     I'm , currently pursuing a Bachelor of Computer Application (BCA) at Bearys Institute of Emerging Sciences, affiliated with Mangalore University. I possess a strong enthusiasm for exploring new dimensions within the Computer application filed  and am committed to expanding my expertise in this domain.
+                     
+                    </p>
+                        <div class="tab-tittles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+
+                    </div>
+
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C Programming</span> <br>Proficient in basic C programming, capable of implementing fundamental algorithms and logical structures</li>
+                            <li>
+                                <span> Java Programming</span> <br>  Skilled in core Java programming, proficiently developing applications with a focus on object-oriented concepts.
+                            <li>
+                                <span> Web Development
+
+                                    </span> <br>Proficient in creating web content using HTML and CSS, enabling the design of simple and effective webpages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                              <Span>Fresher</Span><br>
+                              As a fresher, I'm eagerly looking to enter the industry and contribute my skills. By stepping into the professional realm, I aim to not only apply my existing knowledge but also gain practical experience that will significantly enhance my understanding. The dynamic and challenging environment of the industry excites me, and I'm dedicated to continuous learning and growth to make meaningful contributions to projects and teams.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span> 2020</span> <br> I have successfully completed the Secondary School Leaving Certificate (SSLC) under the supervision of the Karnataka Secondary Education Examination Board (KSEEB).
+                            </li>
+                            <li>
+                                <span> 2022 </span> <br> 
+                                I have accomplished the successful completion of my Pre-University College (PUC) education under the guidance of the Karnataka Secondary Education Examination Board (KSEEB).
+                            </li>
+                            <li>
+                                <span> 2022-25</span> <br> I am currently engrossed in pursuing a Bachelor of Computer Application (BCA) at the prestigious Bearys Institute of Emerging Sciences.<br> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services--------------------- -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-tittle">Coding Insights</h2>
+            <div class="services-list">
+                <div>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>Code Crafting</h2>
+                    <p>Breaking Down Challenges into Logical Sequences.</p>
+                    
+                </div>
+                 <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2> Writting the Future</h2>
+                    <p> Each Line of Code Tells a Story </p>
+                    
+                </div>  
+                <div>
+                    <!-- <i class="fa-brands fa-app-store"></i> -->
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Coding</h2>
+                    <p> Where Imagination Meets Virtual Reality </p>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------portfolio ------------------------ -->
+    <div id="project">
+        <div class="container">
+            <h2 class="sub-tittle">My Project </h2>
+            <div class="project-list">
+                <div class="project">
+                    <img src="image/bank.png" width="40vw" height="450px">
+                    <div class="layer">
+                        <h3>Bank Management System</h3>
+                        <p>I've successfully developed a straightforward bank management project using Java, incorporating a connection to a MySQL database. If you're interested in reviewing the source code of this project, kindly click on the icon provided below the text.
+                        </p>
+                        <a href="https://github.com/saneemXcode/bank-management-system/tree/main/src"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="image/qiuz.png" height="450px">
+                    <div class="layer">
+                        <h3> Quiz application</h3>
+                        <p>  I created an interactive Java quiz application using Java Swing, ensuring engaging user experience and interactivity.If you're interested in reviewing the source code of this project, kindly click on the icon provided below the text.</p>
+                        <a href="https://github.com/saneemXcode/Quiz-Application/tree/master/Myproject"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="image/chat.jpg" height="450px">
+                    <div class="layer">
+                        <h3>Chatting Application</h3>
+                        <p>
+                            I've developed a Java-based chat application using socket programming, facilitating seamless and instant communication. Users can exchange messages effortlessly .If you're interested in reviewing the source code of this project, kindly click on the icon provided below the text.</p>   
+                            </p>
+                        <a href="https://github.com/saneemXcode/Chatting-Application-using-java/tree/master/Myproject"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!-- ---------------------------------contact ------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-tittle">Contact Me</h2>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> mahammadsaneem8310@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone-volume"></i> 8310076282</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i> </a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i> </a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i> </a>
+                </div>
+                    <a href="image/my-cv.pdf" download class="btn btn-2">Download CV</a>
+                </div>       
+                <div class="contact-right"> 
+                    <form >
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; www.saneemportfolio.com | All rights reserved 
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Tech Learner', 'Student Developer','Aspiring Programmer','Coding Enthusiast','Future Web Developer'],
+            typeSpeed: 80,
+            loop:true
+        });
+    </script>
+     <script>
+
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents=document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+            
+        }     
+        
+    </script>
+ <script>
+    var sidemenus=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenus.style.right="0";
+    }
+    function closemenu(){
+        sidemenus.style.right="-200px";
+    }
+ </script>
+</body>
+
+</html>
