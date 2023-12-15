@@ -490,6 +490,9 @@ nav #fas{
         z-index: 2;
         transition: right 0.5s;
     }
+    nav ul li a{
+        color: white;
+    }
     
     #element{
         /* width: 50vw; */
@@ -507,7 +510,7 @@ nav #fas{
         cursor: pointer;
     }
     nav ul li a::after {
-        background-color: rgb(251, 255, 255);
+        background-color: rgb(177, 20, 132);
     }
 
     .layer a {
