@@ -59,7 +59,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+    -webkit-background-clip: text;
+    color: transparent;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -69,7 +71,7 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background:linear-gradient(to right ,#00d9ff,#ee00ff);
+    background:white;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -505,7 +507,7 @@ nav #fas{
         cursor: pointer;
     }
     nav ul li a::after {
-        background-color: rgb(254, 255, 255);
+        background-color: rgb(251, 255, 255);
     }
 
     .layer a {
